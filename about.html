@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative AI Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            /* background: url(RESOURSE/slide1.jpeg); */
+            background-color: #0a0d2b;
+            color: white;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .about-section {
+            background-color: #0d0f4b;
+            padding: 50px;
+        }
+        .about-section .btn {
+            background: linear-gradient(to right, yellow, green);
+            border: none;
+            padding: 10px 20px;
+            color: black;
+            font-weight: bold;
+        }
+        .accreditation {
+            padding: 30px;
+            text-align: center;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-custom {
+            background: linear-gradient(to right, #ffea00, #00ffea);
+            border: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(to right, #00ffea, #ffea00);
+            color: #000;
+        }
+        .testimonial-section h2 {
+            margin-bottom: 30px;
+        }
+        .categories-wrapper {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px 0;
+        }
+        .categories-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+        .category {
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .category img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .category:hover {
+            transform: scale(0.95);
+        }
+        .category img:hover {
+            opacity: 0.8;
+        }
+        .category p {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .testimonial-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            animation: slide-in 1s ease-in-out;
+        }
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            filter: invert(0.6);
+        }
+        .join-now {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .welcome {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.433)), url(RESOURSE/ser1.jpeg);
+      height: 250px;
+      /* padding: 2%; */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      border-radius: 2%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="d-flex mx-3    justify-content-center align-items-center flex-wrap">
+                <p ><a href="tel: +917834826128">+ 123456789021   |</a></p>
+                <p><a href="mailto: info@worldwebrobotics.com">| info@worldwebrobotics.com</a></p>
+             
+            </div>
+          </div>
+      
+          <div class="middle">
+            <div class="">
+              <div class="">
+                <a class="navbar-brand" href="#"
+                  ><img class="brand-name" src="RESOURSE/logouday.png" alt=""
+                /></a>
+              </div>
+              <div class="search">
+                <form class="d-flex" action="#" method="get">
+                  <input
+                    class="form-control search-bar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button style=" background-color: #0c2b3e;" class="btn search-btn text-white" type="submit">
+                    <i class="">Search</i>
+                  </button>
+                </form>
+              </div>
+              <div class="btnlog float-end  my-2">
+                 <button class="btn search-btn" type="submit">
+                  <a href="login.html"><i class="bi bi-search"></i> Login
+
+                  <i class="bi bi-search "></i>/ Signup</a>
+                </button>
+               
+              </div>
+            </div>
+          </div>
+      
+          <nav class="navbar">
+            <div class="toggler">☰</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offer.html">Offers</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="getintouch.html">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <div class="nav2">
+            <div class="round-start nav-bar">
+              <div class="nav-item active" >
+                <a href="index.html"><img class=" border-start border-warning border-5 rounded-pill" style="height: 5vh" src="RESOURSE/home.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+                <a href="getintouch.html"><img style="height: 5vh" src="RESOURSE/chat.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+               <a href="profile.html"> <img style="height: 5vh" src="RESOURSE/conatct.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+                <img style="height: 5vh" src="RESOURSE/setting.png" alt="" />
+              </div>
+              <div class="nav-item" >
+                <img style="height: 5vh" src="RESOURSE/home.png" alt="" />
+              </div>
+            </div>
+          </div>
+    </header>
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="fade-right">CREATIVE AI TEAM TRANSFERRING</h1>
+            <h2 class="fade-left">DATA INTO VIEWS, BOOSTING OUTPUT, AND TRANSFORMING</h2>
+        </div>
+        <div class="row about-section align-items-center zoom-out-up">
+            <div class="col-md-6">
+                <h2>ABOUT US</h2>
+                <p>Uma cursus eget nunc scelerisque viverra mauris in aliquam . Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore, accusantium ratione cupiditate quia nisi perferendis distinctio nobis eveniet sapiente delectus cum illum libero eligendi! Perferendis eligendi illum consectetur porro labore deleniti obcaecati, eius maiores consequuntur magni quibusdam consequatur suscipit quasi, facilis fugiat, dignissimos optio sit totam placeat fugit in! ..</p>
+                <button class="btn">KNOW MORE</button>
+            </div>
+            <div class="col-md-6 text-center zoom-out-down">
+                <img src="RESOURSE/ai.jpeg" class="img-fluid" alt="AI and Businessman">
+            </div>
+        </div>
+        <div class="accreditation">
+            <h5>WE ARE ACCREDITED BY</h5>
+            <div class="d-flex justify-content-center gap-3">
+                <img class="zoom-in-right" src="RESOURSE/i1.jpeg" alt="Neuro" width="100">
+                <img class=" zoom-out" src="RESOURSE/i2.jpeg" alt="Innovate" width="100">
+                <img class="zoom-in-left" src="RESOURSE/i3.jpeg" alt="NextSoft" width="100">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 centered-content">
+        <div class="row align-items-center">
+            <div class="col-lg-6 fade-right">
+                <img src="RESOURSE/i1.jpeg" alt="AI Interface" class="img-fluid">
+            </div>
+            <div class="col-lg-6 fade-left">
+                <h2 class="text-uppercase">Advantages of Our Curriculum</h2>
+                <p>Our AI curriculum provides hands-on experience, expert mentorship, and comprehensive learning.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>✅ Learn from experts in the field.</p>
+                        <p>✅ Hands-on with workshop programs.</p>
+                        <p>✅ Policy for 7-day reboot refunds.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>✅ LIVE lectures combined with archival videos.</p>
+                        <p>✅ A program created by experts.</p>
+                        <p>✅ Complete help with job placement.</p>
+                    </div>
+                </div>
+                <button class="btn btn-custom px-4 py-2 mt-3">Know More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Hardware Categories</h2>
+        <div class="categories-wrapper">
+            <div class="category zoom-out">
+                <img src="RESOURSE/p9.jpeg" data-hover="hardware1-hover.jpg" alt="Processors">
+                <p>Processors</p>
+            </div>
+            <div class="category zoom-out">
+                <img src="RESOURSE/motherboard.jpeg" data-hover="hardware2-hover.jpg" alt="Motherboards">
+                <p>Motherboards</p>
+            </div>
+            <div class="category zoom-out">
+                <img src="RESOURSE/Graphics Cards.jpeg" data-hover="hardware3-hover.jpg" alt="Graphics Cards">
+                <p>Graphics Cards</p>
+            </div>
+            <div class="category zoom-out">
+                <img src="RESOURSE/RAM.jpeg" data-hover="hardware4-hover.jpg" alt="Memory (RAM)">
+                <p>Memory (RAM)</p>
+            </div>
+            <div class="category zoom-out">
+                <img src="RESOURSE/SD.jpeg" data-hover="hardware5-hover.jpg" alt="Storage Devices">
+                <p>Storage Devices</p>
+            </div>
+            <div class="category zoom-out">
+                <img src="RESOURSE/p9.jpeg" data-hover="hardware1-hover.jpg" alt="Processors">
+                <p>Processors</p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="text-center">THE JOURNEY OUR CLIENTS TAKE WITH US</h2>
+        <div class="testimonial-section" id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"Amazing experience! The AI solutions transformed my business."</p>
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Reviewer 1" class="testimonial-img">
+                    <h5>Mercy</h5>
+                    <p>Programmer</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"The best investment I've made in AI education!"</p>
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Reviewer 2" class="testimonial-img">
+                    <h5>John</h5>
+                    <p>Data Scientist</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"Highly recommend their AI training. Excellent curriculum."</p>
+                    <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Reviewer 3" class="testimonial-img">
+                    <h5>Sophia</h5>
+                    <p>AI Researcher</p>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button> -->
+        </div>
+    </section>
+
+    <section class="join-now welcome m-5 flip-down">
+        <h2>JOIN THE MOST PROMISING ARTIFICIAL INTELLIGENT TECHNOLOGY</h2>
+        <p>Lorem ipsum text about AI technology and innovation.</p>
+        <a href="#" class="btn-custom p-2 flip-down">JOINING NOW</a>
+    </section>
+
+    <footer class="footer text-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8 mx-auto subscribe-box">
+              <h3>Subscribe Our Newsletter</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <input type="email" placeholder="Your Email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img class="brand-name" src="RESOURSE/logouday.png" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Get In Touch</h5>
+              <p>1234 Abner Road, Hudson</p>
+              <p>example@email.com</p>
+              <p>+1234 567 890</p>
+              <p>07:00 AM - 18:00 PM</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li>Email Us</li>
+                <li>Company</li>
+                <li>Career</li>
+                <li>How We Work</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Support</h5>
+              <ul class="list-unstyled">
+                <li>FAQs</li>
+                <li>Help Center</li>
+                <li>Consultation</li>
+                <li>Visit Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom text-center">
+            <p>
+              &copy; 2025 ASK Project |
+              <a href="#" class="text-light">Privacy Policy</a> |
+              <a href="#" class="text-light">Terms & Services</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        // Hover Effect: Change Image on Hover
+        document.querySelectorAll(".category img").forEach(img => {
+            let originalSrc = img.src;
+            let hoverSrc = img.getAttribute("data-hover");
+
+            img.addEventListener("mouseover", () => {
+                if (hoverSrc) img.src = hoverSrc;
+            });
+
+            img.addEventListener("mouseout", () => {
+                img.src = originalSrc;
+            });
+        });
+    </script>
+<script src="animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

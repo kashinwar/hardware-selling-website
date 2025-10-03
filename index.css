@@ -1,0 +1,230 @@
+body{
+   background-color: #0c2b3e;
+   color: #d2d3d4;
+   overflow-x: hidden;
+}
+.top-bar {
+    background: #d2d3d4; padding: 5px 0;  bottom: 0;}
+.nav-link {
+    color: #c3ec0d; }
+.search-bar { 
+   max-width: 600px; }
+.dropdown-menu { 
+   min-width: 200px; }
+.logo{
+   max-width: 8vw;}
+/* .contact{
+   max-width: 2vw;
+} */
+a{text-decoration: none;}
+.options{
+   background-color: #0c2b3e;
+   /* margin: auto; */
+
+}
+.carousel img{
+height: 70vh;
+}
+
+
+.carousel-container {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+.carousel-caption{
+position: absolute;
+transform: translateY(-60%);
+}
+.category {
+   text-align: center;
+   margin: 20px;
+}
+.category img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   transition: transform 0.3s ease-in-out;
+}
+.category img:hover {
+   transform: scale(1.1);
+   content: attr(data-hover);
+}
+.collection {
+   position: relative;
+   overflow: hidden;
+}
+
+.collection img {
+   width: 100%;
+   /* height: auto; */
+   display: block;
+}
+
+.collection .overlay {
+   position: absolute;
+   bottom: 10%;
+   left: 10%;
+   color: white;
+}
+
+/* .collection .overlay h5 {
+   font-weight: bold;
+   font-size: 2rex;
+}
+
+.collection .overlay p {
+   font-size: 0.9rem;
+} */
+
+.shop-link {
+    color: black;
+   text-decoration: none;
+   font-weight: bold;
+   display: inline-block;
+   position: relative;
+}
+
+/* .shop-link::after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: black;
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+} */
+.slider-container {
+position: relative;
+overflow: hidden;
+width: 93%;
+/* max-width: 1000px; */
+margin: auto;
+border-radius: 10px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.slider {
+display: flex;
+transition: transform 1s linear;
+will-change: transform;
+}
+.slider img{
+height: 35vh;
+}
+.slide {
+flex: 0 0 calc(100% / 5);
+text-align: center;
+padding: 20px;
+color: white;
+}
+
+@media (max-width: 768px) {
+.slide {
+flex: 0 0 calc(100% / 3); 
+}
+}
+@media (max-width: 480px) {
+.slide {
+flex: 0 0 calc(100% / 2); 
+}
+}
+
+
+
+
+
+/* ---------------------producta all--------------------------- */
+/* .product-card img {
+   width: 100%;
+   height: auto;
+} */
+.product-all{
+   background-color: rgba(148, 146, 144, 0.248);
+}
+
+.product-card img{
+   
+   border-style: groove;
+   border-color: rgba(177, 174, 172, 0.286);
+   max-width: 15vw;
+}
+.sale-price {
+   color: red;
+   font-weight: bold;
+}
+.product-card.hidden {
+   opacity: 0;
+   transform: scale(0.9);
+   transition: all 0.5s ease-in-out;
+}
+
+/* -------------------------------------------------------9ck/---------------------------------------------------------------- */
+
+
+
+.product-card {
+    /* background: #fff; */
+    /* border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    text-align: center;
+    padding: 8px;
+    /* margin: 1px; */
+    transition: transform 0.3s ease-in-out;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.product-card:hover {
+    transform: scale(0.9);
+}
+.product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+/* --------------------------------------------------end 9ck--------------------------------------------------------------------------------------- */
+
+
+/* =============================================== */
+/* =============== Slider brand Controls =============== */
+.brand-slider {
+   background-color: #f8f9fa;
+   padding: 40px 0;
+   overflow: hidden;
+   position: relative;
+   white-space: nowrap;
+}
+
+/* .slider-track {
+   display: flex;
+   animation: scroll 15s linear infinite;
+   width: calc(220px * 12); 
+} */
+
+.brand-logo {
+   width: 5vw;
+   height: auto;
+   margin: 10px;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.2)); 
+}
+
+.brand-logo:hover {
+   transform: scale(1.1);
+   filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.3)); 
+}
+
+

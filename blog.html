@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Tech Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            background-color: #dedee3;
+            color: rgb(0, 0, 0);
+        }
+        .welcome {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.433)), url(RESOURSE/ser.jpeg);
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+
+        .sidebar {
+            position: sticky;
+            top: 10px;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #9e9ea2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .content-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .post-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: yellow;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+        .pagination p {
+            color: white;
+            background-color: #08082c;
+            border-radius: 50%;
+            padding: 8px 12px;
+            margin: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .pagination a:hover {
+            background-color: yellow;
+            color: black;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="d-flex mx-3    justify-content-center align-items-center flex-wrap">
+                <p ><a href="tel: +917834826128">+ 911234567890   |</a></p>
+                <p><a href="mailto: info@worldwebrobotics.com">| info@worldwebrobotics.com</a></p>
+             
+            </div>
+          </div>
+      
+          <div class="middle">
+            <div class="">
+              <div class="">
+                <a class="navbar-brand" href="#"
+                  ><img class="brand-name" src="RESOURSE/logouday.png" alt=""
+                /></a>
+              </div>
+              <div class="search">
+                <form class="d-flex" action="#" method="get">
+                  <input
+                    class="form-control search-bar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button style=" background-color: #0c2b3e;" class="btn search-btn text-white" type="submit">
+                    <i class="">Search</i>
+                  </button>
+                </form>
+              </div>
+              <div class="btnlog float-end  my-2">
+                 <button class="btn search-btn" type="submit">
+                  <a href="login.html"><i class="bi bi-search"></i> Login
+
+                  <i class="bi bi-search "></i>/ Signup</a>
+                </button>
+               
+              </div>
+            </div>
+          </div>
+      
+          <nav class="navbar">
+            <div class="toggler">☰</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offer.html">Offers</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="getintouch.html">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <div class="nav2">
+            <div class="round-start nav-bar">
+              <div class="nav-item active" >
+                <a href="index.html"><img class=" border-start border-warning border-5 rounded-pill" style="height: 5vh" src="RESOURSE/home.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+                <a href="getintouch.html"><img style="height: 5vh" src="RESOURSE/chat.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+               <a href="profile.html"> <img style="height: 5vh" src="RESOURSE/conatct.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+                <img style="height: 5vh" src="RESOURSE/setting.png" alt="" />
+              </div>
+              <div class="nav-item" >
+                <img style="height: 5vh" src="RESOURSE/home.png" alt="" />
+              </div>
+            </div>
+          </div>
+    </header>
+
+
+
+    <section class="p-3 flip-right">
+        <div class=" rounded-3 welcome pt-5">
+          <h1 class="text-center fw-bold text-light text-center">NEWS & BLOGS</h1>
+        </div>
+      </section>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Left Content Section -->
+        <div class="col-lg-8">
+            <div id="content-container">
+                <!-- Content Page 1 -->
+                <div class="content-section active" id="page1">
+                    <div class="row">
+                        <div class="col-md-6 fade-right">
+                            <img src="RESOURSE/i1.jpeg" alt="AI Image">
+                            <p class="">JUN 2024</p>
+                            <h3 class="post-title">AI FOR CYBERSECURITY Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa et non reiciendis. Laborum repellendus maxime excepturi provident optio vero cum!</h3>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque a soluta minima tempora beatae quibusdam voluptate. Totam quae reprehenderit neque quasi optio accusantium cumque suscipit, dolores ipsa perferendis, ipsam vel?</p>
+                            <a href="#" class="text-warning">READ MORE</a>
+                        </div>
+                        <div class="col-md-6 fade-left">
+                            <img src="RESOURSE/i2.jpeg" alt="AI Image">
+                            <p class="">JUN 2024</p>
+                            <h3 class="post-title">ENSURE SECURITY WITH AI Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusantium, molestias quibusdam provident maiores distinctio ipsam cum magnam iste earum.</h3>
+                           <p>Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias in consectetur maiores voluptatum qui similique pariatur dolorem, dolore eos enim cumque nemo aliquam eius illum expedita quia rerum iure molestiae.</p>
+                            <a href="#" class="text-warning">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Page 2 -->
+                <div class="content-section" id="page2">
+                    <div class="row">
+                        <div class="col-md-6 fade-right">
+                            <img src="RESOURSE/p1.jpeg" alt="AI Image">
+                            <p class="">JUN 2024</p>
+                            <h3 class="post-title">HOW AI HELPS BIG DATA Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta corrupti nobis laboriosam placeat recusandae nisi eligendi asperiores incidunt repudiandae quae.</h3>
+                            <p>Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias in consectetur maiores voluptatum qui similique pariatur dolorem, dolore eos enim cumque nemo aliquam eius illum expedita quia rerum iure molestiae.</p>
+                           
+                            <a href="#" class="text-warning">READ MORE</a>
+                        </div>
+                        <div class="col-md-6 fade-left">
+                            <img src="RESOURSE/p2.jpeg" alt="" >
+                            <p class="">JUN 2024</p>
+                            <h3 class="post-title">AI MAKES MACHINES SMARTER Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit nostrum odit iste. Mollitia ea corporis magni modi doloribus dolor?</h3>
+                           <p>Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias in consectetur maiores voluptatum qui similique pariatur dolorem, dolore eos enim cumque nemo aliquam eius illum expedita quia rerum iure molestiae.</p>
+
+                            <a href="#" class="text-warning">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Page 3 -->
+                <div class="content-section" id="page3">
+                    <div class="row">
+                        <div class="col-md-6 fade-right">
+                            <img src="RESOURSE/p9.jpeg" alt="AI Image">
+                            <p class="">MAY 2024</p>
+                            <h3 class="post-title">LATEST AI TECHNOLOGY Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium officiis, quis recusandae mollitia vero fugit ut quisquam voluptas alias animi!</h3>
+                           <p>Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias in consectetur maiores voluptatum qui similique pariatur dolorem, dolore eos enim cumque nemo aliquam eius illum expedita quia rerum iure molestiae.</p>
+                            
+                            <a href="#" class="text-warning">READ MORE</a>
+                        </div>
+                        <div class="col-md-6 fade-left">
+                            <img src="RESOURSE/p10.jpeg" alt="AI Image">
+                            <p class="text-muted">MAY 2024</p>
+                            <h3 class="post-title">ROBOTICS AND AI Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum est autem dolore pariatur fugiat, ullam aliquid magni iste cupiditate aperiam?</h3>
+                           <p>Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias in consectetur maiores voluptatum qui similique pariatur dolorem, dolore eos enim cumque nemo aliquam eius illum expedita quia rerum iure molestiae.</p>
+                            
+                            <a href="#" class="text-warning">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar (Static) -->
+        <div class="col-lg-4 sidebar">
+            <input type="text" class="form-control mb-3" placeholder="Search">
+            <h5 class="text-warning fs-3">RECENT POSTS</h5>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white fs-5">Ensure Your Security With AI</a></li>
+                <li><a href="#" class="text-white fs-5">How AI Helps Big Data</a></li>
+                <li><a href="#" class="text-white fs-5">Recent Advances in AI</a></li>
+            </ul>
+
+            <h5 class="text-warning mt-3">TAGS</h5>
+            <span class="highlight">INTELLIGENCE</span> <span class="highlight">PROGRAMMING</span> <span class="highlight">SCIENCE</span>
+
+            <h5 class="text-warning mt-3">INSTAGRAM</h5>
+            <div class="row">
+                <div class="col-4"><img src="RESOURSE/Solidstart.jpeg" class="img-fluid"></div>
+                <div class="col-4"><img src="RESOURSE/slide1.jpeg" class="img-fluid"></div>
+                <div class="col-4"><img src="RESOURSE/SD.jpeg" class="img-fluid"></div>
+            </div>
+
+            <div class="mt-4">
+                <img src="RESOURSE/ser3.jpeg" class="img-fluid">
+                <p class="text-center mt-2">DIGITAL TECH SUMMIT</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination -->
+<div class="pagination mt-4">
+    <p  onclick="showPage(1)">1</p>
+    <p  onclick="showPage(2)">2</p>
+    <p onclick="showPage(3)">3</p>
+</div>
+
+<footer class="footer text-light">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-8 mx-auto subscribe-box">
+          <h3>Subscribe Our Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <input type="email" placeholder="Your Email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img class="brand-name" src="RESOURSE/logouday.png" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Get In Touch</h5>
+          <p>1234 Abner Road, Hudson</p>
+          <p>example@email.com</p>
+          <p>+1234 567 890</p>
+          <p>07:00 AM - 18:00 PM</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li>Email Us</li>
+            <li>Company</li>
+            <li>Career</li>
+            <li>How We Work</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li>FAQs</li>
+            <li>Help Center</li>
+            <li>Consultation</li>
+            <li>Visit Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p>
+          &copy; 2025 ASK Project |
+          <a href="#" class="text-light">Privacy Policy</a> |
+          <a href="#" class="text-light">Terms & Services</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<script src="animation.js"></script>
+<script>
+    function showPage(pageNumber) {
+        // Hide all content sections
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show selected content section
+        document.getElementById('page' + pageNumber).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

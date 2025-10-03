@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Commerce Layout</title>
+    <!-- FontAwesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+        body { background-color: #e0dfdf; color: #000000; }
+        .hero-section { position: relative; text-align: center; }
+        .hero-section img { 
+            width: 100%;
+            height: 60vh;
+         }
+         .trending-section p{color: #000000;}
+        .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .trending-section { text-align: center; padding: 30px 0; }
+        .trending-item img { width: 100%; border-radius: 5px; }
+        .custom-img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .tall-img {
+            height: 600px;
+        }
+        .square-img {
+            height: 300px;
+        }
+        
+        /* ------------------------------------------------------------+1-------------------------------------------------------------------------- */
+.product-card1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card1:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card1:hover .product-image {
+    transform: scale(1.3);
+}
+
+.product-body {
+    padding: 10px;
+}
+
+.price-section {
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+.product-card1:hover .price-section {
+    opacity: 0;
+}
+
+.overlay-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card1:hover .overlay-buttons {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+.btn-icon:hover {
+    color: #ff4d4d;
+}
+
+.qty-container {
+    display: flex;
+    align-items: center;
+}
+
+.qty-btn {
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.qty-btn:hover {
+    background: #e60000;
+}
+
+.qty-value {
+    margin: 0 8px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+/* ---------------------------------------------------end +1--------------------------------------------------------------- */
+        
+    </style>    
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="d-flex mx-3    justify-content-center align-items-center flex-wrap">
+                <p ><a href="tel: +917834826128">+ 911234567890   |</a></p>
+                <p><a href="mailto: info@worldwebrobotics.com">| info@worldwebrobotics.com</a></p>
+             
+            </div>
+          </div>
+      
+          <div class="middle">
+            <div class="">
+              <div class="">
+                <a class="navbar-brand" href="#"
+                  ><img class="brand-name" src="RESOURSE/logouday.png" alt=""
+                /></a>
+              </div>
+              <div class="search">
+                <form class="d-flex" action="#" method="get">
+                  <input
+                    class="form-control search-bar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button style=" background-color: #0c2b3e;" class="btn search-btn text-white" type="submit">
+                    <i class="">Search</i>
+                  </button>
+                </form>
+              </div>
+              <div class="btnlog float-end  my-2">
+                 <button class="btn search-btn" type="submit">
+                  <a href="login.html"><i class="bi bi-search"></i> Login
+
+                  <i class="bi bi-search "></i>/ Signup</a>
+                </button>
+               
+              </div>
+            </div>
+          </div>
+      
+          <nav class="navbar">
+            <div class="toggler">☰</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offer.html">Offers</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="getintouch.html">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <div class="nav2">
+            <div class="round-start nav-bar">
+              <div class="nav-item active" >
+                <a href="index.html"><img class=" border-start border-warning border-5 rounded-pill" style="height: 5vh" src="RESOURSE/home.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+                <a href="getintouch.html"><img style="height: 5vh" src="RESOURSE/chat.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+               <a href="profile.html"> <img style="height: 5vh" src="RESOURSE/conatct.png" alt="" /></a>
+              </div>
+              <div class="nav-item" >
+                <img style="height: 5vh" src="RESOURSE/setting.png" alt="" />
+              </div>
+              <div class="nav-item" >
+                <img style="height: 5vh" src="RESOURSE/home.png" alt="" />
+              </div>
+            </div>
+          </div>
+    </header>
+    
+   
+
+    <section class="hero-section">
+        <img src="RESOURSE/main.jpeg" alt="New Arrival Collection" class="">
+        <div class="hero-text">
+            <h1 class="text-light fade-right">New Arrival Collection</h1>
+            <button class="btn btn-light fade-left">Explore Now</button>
+        </div>
+
+    </section>
+    <section class="container mt-4">
+        <p class="fs-3 text-center">ALL PRODUCTS</p>
+        <p class="fs-3 text-center">Lorem ipsum dolor sit amet.</p>
+    
+        <div class="d-flex flex-nowrap align-items-stretch gap-3 mt-5">
+            <div class="col-6 zoom-in-right">
+                <img src="RESOURSE/robot-hand.jpeg" class="img-fluid bg-danger custom-img tall-img" alt="Smiling Woman">
+            </div>
+    
+            <div class="col-3 d-flex flex-column ">
+                <img src="RESOURSE/SD.jpeg" class="img-fluid custom-img square-img zoom-out-down" alt="Backpack">
+                <img src="RESOURSE/p14.jpeg" class="img-fluid custom-img square-img mt-2 zoom-out-up " alt="Shoes">
+            </div>
+    
+            <div class="col-3">
+                <img src="RESOURSE/heart.jpeg" class="img-fluid custom-img tall-img zoom-in-left" alt="Watch">
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-section">
+        <h2 class="fs-1">-Trending -</h2>
+        <p class="fs-5">Top views in this week</p>
+        <div class="container ">
+            <div class="row">
+                <div class="col hover-div fade-up">
+                    <img src="RESOURSE/p1.jpeg" class="img-fluid trending-item zoom-kr" alt="High Waist Pants">
+                    <p>Ridley High Waist - $36.00</p>
+                </div>
+                <div class="col hover-div fade-up">
+                   <a href="">
+                    <img src="RESOURSE/p2.jpeg" class="img-fluid trending-item zoom-kr" alt="Blush Beanie">
+                    <p>Blush Beanie - $15.00</p>
+                   </a>
+                </div>
+                <div class="col hover-div fade-up">
+                <a href=""> <img src="RESOURSE/p3.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p>
+              </a>   
+                </div>
+                <div class="col hover-div fade-up">
+                    <a href="#">
+                        <img src="RESOURSE/p8.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p>
+                    </a>
+                </div>
+                <div class="col hover-div fade-up">
+                    <a href="">
+                        <img src="RESOURSE/p12.jpeg" class="img-fluid trending-item zoom-kr" alt="Blush Beanie">
+                    <p>Blush Beanie - $15.00</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col hover-div fade-up">
+                    <a href=""><img src="RESOURSE/Solidstart.jpeg" class="img-fluid trending-item zoom-kr" alt="High Waist Pants">
+                        <p>Ridley High Waist - $36.00</p></a>
+                </div>
+                <div class="col hover-div fade-up">
+                    <a href=""><img src="RESOURSE/p12.jpeg" class="img-fluid trending-item zoom-kr" alt="Blush Beanie">
+                        <p>Blush Beanie - $15.00</p></a>
+                </div>
+                <div class="col hover-div fade-up">
+                    <a href=""><img src="RESOURSE/p10.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p></a>
+                </div>
+                <div class="col hover-div fade-up">
+                   <a href="">
+                    <img src="RESOURSE/p9.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p>
+                   </a>
+                </div>
+                <div class="col hover-div fade-up">
+                    <a href=""><img src="RESOURSE/p1.jpeg" class="img-fluid trending-item zoom-kr" alt="High Waist Pants">
+                        <p>Ridley High Waist - $36.00</p></a>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col hover-div fade-up">
+                   <a href=""> <img src="RESOURSE/p9.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p></a>
+                </div>
+                <div class="col hover-div fade-up">
+                    <img src="RESOURSE/p1.jpeg" class="img-fluid trending-item zoom-kr" alt="High Waist Pants">
+                    <p>Ridley High Waist - $36.00</p>
+                </div>
+                <div class="col hover-div fade-up">
+                   <a href="">
+                    <img src="RESOURSE/p2.jpeg" class="img-fluid trending-item zoom-kr" alt="Blush Beanie">
+                    <p>Blush Beanie - $15.00</p>
+                   </a>
+                </div>
+                <div class="col hover-div fade-up">
+                <a href=""> <img src="RESOURSE/p3.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p>
+              </a>   
+                </div>
+                <div class="col hover-div fade-up">
+                    <a href="#">
+                        <img src="RESOURSE/p8.jpeg" class="img-fluid trending-item zoom-kr" alt="Joggers">
+                    <p>Analogue Resin Strap - $30.00</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <div class="trending-section container my-4">
+     <!-- --------------------------------------------------+1----------------------------------------------------------------------------------- -->
+     <h2>-BEST SELLER-</h2>
+     <p>Top views in this week</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-sm-2   row-cols-lg-4 g-4">
+            
+            <!-- Product Card 1 -->
+             <a href="">
+            <div class="col">
+                <div class="product-card1 flip-right">
+                    <div class="image-container ">
+                        <img src="RESOURSE/9c.jpeg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-body">
+                        <h6 class="text-primary">Cooler Master</h6>
+                        <p><strong>COOLER MASTER ML360 ATMOS</strong></p>
+                        
+                        <div class="price-section">
+                            <p class="text-danger">₹14,650 <del class="text-muted">₹28,999</del></p>
+                        </div>
+    
+                        <div class="overlay-buttons">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <div class="qty-container">
+                                <button class="qty-btn" onclick="decrementQty(this)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="incrementQty(this)">+</button>
+                            </div>
+                            <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="">
+            <div class="col">
+                <div class="product-card1 flip-right">
+                    <div class="image-container">
+                        <img src="RESOURSE/9c.jpeg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-body">
+                        <h6 class="text-primary">Antec</h6>
+                        <p><strong>ANTEC CX800 ARGB MID CASE</strong></p>
+                        
+                        <div class="price-section">
+                            <p class="text-danger">₹5,495 <del class="text-muted">₹11,999</del></p>
+                        </div>
+    
+                        <div class="overlay-buttons">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <div class="qty-container">
+                                <button class="qty-btn" onclick="decrementQty(this)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="incrementQty(this)">+</button>
+                            </div>
+                            <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="col">
+                <div class="product-card1 flip-right">
+                    <div class="image-container">
+                        <img src="RESOURSE/9c.jpeg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-body">
+                        <h6 class="text-primary">Antec</h6>
+                        <p><strong>ANTEC CX800 ARGB MID CASE</strong></p>
+                        
+                        <div class="price-section">
+                            <p class="text-danger">₹5,495 <del class="text-muted">₹11,999</del></p>
+                        </div>
+    
+                        <div class="overlay-buttons">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <div class="qty-container">
+                                <button class="qty-btn" onclick="decrementQty(this)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="incrementQty(this)">+</button>
+                            </div>
+                            <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="">
+            <div class="col">
+                <div class="product-card1 flip-right">
+                    <div class="image-container">
+                        <img src="RESOURSE/9c.jpeg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-body">
+                        <h6 class="text-primary">TP-Link</h6>
+                        <p><strong>TP LINK DECO X50 WIFI 6 </strong></p>
+                        
+                        <div class="price-section">
+                            <p class="text-danger">₹8,900 <del class="text-muted">₹16,999</del></p>
+                        </div>
+    
+                        <div class="overlay-buttons">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <div class="qty-container">
+                                <button class="qty-btn" onclick="decrementQty(this)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="incrementQty(this)">+</button>
+                            </div>
+                            <button class="btn-icon"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <footer class="footer text-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-md-8 mx-auto subscribe-box">
+              <h3>Subscribe Our Newsletter</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <input type="email" placeholder="Your Email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img class="brand-name" src="RESOURSE/logouday.png" alt="" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Get In Touch</h5>
+              <p>1234 Abner Road, Hudson</p>
+              <p>example@email.com</p>
+              <p>+1234 567 890</p>
+              <p>07:00 AM - 18:00 PM</p>
+            </div>
+            <div class="col-md-3">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li>Email Us</li>
+                <li>Company</li>
+                <li>Career</li>
+                <li>How We Work</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Support</h5>
+              <ul class="list-unstyled">
+                <li>FAQs</li>
+                <li>Help Center</li>
+                <li>Consultation</li>
+                <li>Visit Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom text-center">
+            <p>
+              &copy; 2025 ASK Project |
+              <a href="#" class="text-light">Privacy Policy</a> |
+              <a href="#" class="text-light">Terms & Services</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>

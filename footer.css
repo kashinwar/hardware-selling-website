@@ -1,0 +1,39 @@
+.footer {
+    background-color: #111;
+    padding: 50px 0;
+}
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+.subscribe-box {
+    background: #333;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+.subscribe-box input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.subscribe-box button {
+    background: orange;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+}

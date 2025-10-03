@@ -1,0 +1,10 @@
+body{
+  background-image: url('RESOURSE/index-background.gif');  
+  background-size: cover; 
+   overflow-x: hidden;
+  /* background-position: center;  */
+}
+
+.nav-image{
+    width: 8rex;
+}

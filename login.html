@@ -1,0 +1,82 @@
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="login.css">
+ 
+ 
+  </head>
+  <body>
+    <section class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="Signup" method="post">
+          <h1>Create Account</h1>
+          <input type="text" placeholder="Name" class="form-control" id="name" name = "username" required/>
+          <input type="email" placeholder="Email" class="form-control input" name = "userid" required/>
+          <input type="tel" placeholder="Contact" class="form-control input" maxlength="10" name = "contact" required/>
+          <input type="password" placeholder="Password" class="form-control input" name = "password" required/>
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="Login" method="post">
+          <h1 >Log In</h1>
+          <input type="email" placeholder="Email" name = "username" class="form-control input" required />
+          <input type="password" placeholder="Password" name="password" class="form-control input" required/>
+          <a href="#" class="forget">Forgot your password?</a>
+          <button>Log In</button>
+          <a href="index.html" id="image" ><img alt="back" src="RESOURSE/logouday.png"></a>
+        </form>
+      </div>
+      <div class="overlay-container ">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Log In</button>
+            <a href="index.html" id="image" ><img alt="back" src="RESOURSE/logouday.png"></a>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Your World Is Worth Sharing </h1>
+            <p>Register to obtain flight information, share your experience with us as a keepsake of your life.</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script>
+      const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+    </script>
+    <script>
+    var input = document.getElementById("name").value();
+    input.value()="";
+    </script>
+   
+  </body>
+</html>
